@@ -6,6 +6,7 @@
 int main ()
 {
 		int dia = 0, mes = 0, ano = 0;
+		int n1, n2, suma;
 
 		int meses[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 		scanf_s("%i %i %i", &dia, &mes, &ano);
@@ -26,6 +27,12 @@ int main ()
 		else { dia++; }
 		printf("%2i %2i %4i", dia, mes, ano);
 		return 0;
+		printf("\nDame un numero: ");
+		scanf_s("%d", &n1);
+		printf("Dame otro numero: ");
+		scanf_s("%d", &n2);
+		suma = n1 + n2;
+		printf("\n El resultado de la suma es, %d", suma);
 }
 
 
